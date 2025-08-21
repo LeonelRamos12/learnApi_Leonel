@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.checkerframework.checker.units.qual.C;
 
 import java.time.LocalDate;
 
@@ -33,5 +34,7 @@ public class ProductEntity {
     private Long categoriaId;
     @Column(name = "IDUSUARIOREGISTRO")
     private int usuarioId; //Usuario que lo registro
+    @Column(name = "IMAGEN_URL")
+    private String imagen_url;
 
 }
